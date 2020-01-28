@@ -20,6 +20,11 @@
 		width:33.33%;
 	}
 
+	&__medium-6 {
+		float:left;
+		width:50%;
+	}
+
 	&__medium-4--larger{
 		width:37%;
 	}
@@ -36,7 +41,9 @@
 	}
 	
 
-	
+	&--guters-large {
+		margin-right: -100px;
+	}
 
 &--guters {
 	margin-right: -65px;
@@ -44,6 +51,11 @@
 
 	&--guters > div {
 		padding-right: 65px;
+
+
+	}
+	&--guters-large > div {
+		padding-right: 100px;
 
 
 	}
