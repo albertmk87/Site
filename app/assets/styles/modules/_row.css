@@ -3,6 +3,10 @@
 	@mixin clearfix;
 
 
+	&--padding-t {
+		padding-top: 80px;
+	}
+
 
 &__b-margin-until-medium {
 	margin-bottom: 1rem;
