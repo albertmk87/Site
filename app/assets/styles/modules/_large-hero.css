@@ -4,6 +4,7 @@
 
 
 &__textContent {
+	padding-top: 60px;
 	position: absolute;
 	top:30%;
 	left:0;

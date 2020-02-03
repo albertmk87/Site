@@ -429,6 +429,7 @@ template {
 }
 
 .large-hero__textContent {
+	padding-top: 60px;
 	position: absolute;
 	top:30%;
 	left:0;
@@ -930,6 +931,228 @@ a {
 	
 	}
  }
+
+.site-header {
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	padding:10px 0;
+	-webkit-transition: background-color .3s ease-out;
+	transition: background-color .3s ease-out;
+}
+
+@media(min-width: 800px){
+
+.site-header {
+		background-color:rgba(47,85,114, .3)
+}
+ }
+
+.site-header--isExpanded {
+			background-color:rgba(47,85,114, .55);
+		}
+
+@media(min-width: 800px){
+
+.site-header__button {
+				float: right
+	}
+ }
+
+@media(min-width: 800px){
+
+.site-header__navbar {
+			float: right
+		
+	}
+ }
+
+.site-header__ulnav {
+		list-style: none;
+		margin:0;
+		padding: 0;
+		display: inline-block;
+		padding-top:12px;
+	}
+
+@media(min-width: 800px){
+
+.site-header__ulnav {
+			display: -webkit-box;
+			display: flex
+	}
+ }
+
+.site-header__ulnav li:last-child {
+				padding-right: 0;
+			}
+
+@media(min-width: 800px){
+
+.site-header__ulnav li:last-child {
+					padding-right: 20px
+			}
+ }
+
+.site-header__ulnav a {
+			color:white;
+			text-decoration: none;
+			font-weight: 300;
+			font-size:.8rem;
+			background-color:rgba(47,85,114, .6);
+		}
+
+@media(min-width: 800px){
+
+.site-header__ulnav a {
+				font-size:1rem;
+				background-color: transparent
+		}
+ }
+
+.site-header__ulnav >* {
+		padding-right: 7px;
+		display: inline-block;
+	}
+
+@media(min-width: 800px){
+
+.site-header__ulnav >* {
+			display: block;
+			padding-right: 20px
+	}
+ }
+
+.site-header__logo {
+		position: absolute;
+		background-color:#2f5572;
+		padding: 25px 36px;
+		top:0;
+		left:50%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
+	}
+
+.site-header__logo img {
+				height: 70%;
+				width: 70%;
+		}
+
+@media(min-width: 800px){
+
+.site-header__logo img {
+					height: 100%;
+				width: 100%
+		}
+ }
+
+@media(min-width: 800px){
+
+.site-header__logo {
+			left:auto;
+			-webkit-transform: translateX(0);
+			        transform: translateX(0)
+	}
+ }
+
+.site-header__menu-icon {
+			width: 30px;
+			height: 20px;
+			
+			position: absolute;
+			z-index: 10;
+			top:10px;
+			right: 10px;
+		}
+
+.site-header__menu-icon__top {
+				position: absolute;
+				top:0;
+				left:0;
+				width:30px;
+				height: 3px;
+				background-color:white;
+				-webkit-transform-origin: 0 0;
+				        transform-origin: 0 0;
+				-webkit-transition: -webkit-transform .3s ease-out;
+				transition: -webkit-transform .3s ease-out;
+				transition: transform .3s ease-out;
+				transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+			}
+
+.site-header__menu-icon__middle{
+				position: absolute;
+				top:8px;
+				left:0;
+				width:30px;
+				height: 3px;
+				background-color:white;
+				-webkit-transition: -webkit-transform .3s ease-out;
+				transition: -webkit-transform .3s ease-out;
+				transition: transform .3s ease-out;
+				transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+			}
+
+.site-header__menu-icon__bottom{
+				position: absolute;
+				bottom:0;
+				left:0;
+				width:30px;
+				height: 3px;
+				background-color:white;
+				-webkit-transform-origin: 0 100;
+				        transform-origin: 0 100;
+				-webkit-transition: -webkit-transform .3s ease-out;
+				transition: -webkit-transform .3s ease-out;
+				transition: transform .3s ease-out;
+				transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+			}
+
+@media(min-width: 800px){
+
+.site-header__menu-icon {
+				display: none
+		}
+ }
+
+.site-header__menucontent {
+			opacity: 0;
+			-webkit-transition:all .3s ease-out;
+			transition:all .3s ease-out;
+			position: relative;
+			z-index: -10;
+			padding-top: 100px;
+			text-align: center;	
+		}
+
+@media(min-width: 800px){
+
+.site-header__menucontent {
+				opacity: 1;
+				z-index: 1;
+				padding-top: 0	
+		}
+ }
+
+.site-header__menucontent--isVisible {
+			opacity: 1;
+			z-index: 1;
+		}
+
+.site-header__menu-icon--close .site-header__menu-icon__top{
+				-webkit-transform: rotate(45deg) scaleX(1.25);
+				        transform: rotate(45deg) scaleX(1.25);
+			}
+
+.site-header__menu-icon--close .site-header__menu-icon__middle {
+				opacity: 0;
+
+			}
+
+.site-header__menu-icon--close .site-header__menu-icon__bottom {
+				-webkit-transform: rotate(-45deg) scaleX(1.25) translateY(-5px);
+				        transform: rotate(-45deg) scaleX(1.25) translateY(-5px);
+			}
 
 body {
 	font-family: "Roboto", "san-serif"; 
