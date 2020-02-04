@@ -352,7 +352,7 @@ template {
 .wrapper {
 	overflow: hidden;
 	padding-left:18px;
-	padding-right:18px;
+	padding-right:18px;  
 	max-width: 1200px;
 	margin-left:auto;
 	margin-right: auto;
@@ -360,6 +360,11 @@ template {
 
 .wrapper--medium {
 		max-width:976px; 
+
+	}
+
+.wrapper--narrow {
+		max-width: 470px;
 	}
 
 .wrapper .wrapper {
@@ -586,7 +591,7 @@ a {
 	}
 
 .btn__large{
-		
+
 		padding: 1.1rem 1.9rem;
 	}
 
@@ -718,6 +723,11 @@ a {
 
 .section-title--blue {
 		color:#2f5572;
+	}
+
+.section-title--less-margin{
+		margin-top:0;
+		margin-bottom: 0.3rem;
 	}
 
 .feauture-item {
@@ -1192,6 +1202,88 @@ a {
 		-webkit-transform: scale(1);
 		        transform: scale(1);
 	}
+
+.modal {
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	z-index: 5;
+	background-color:rgba(255, 255, 255, .94);
+	top:0;
+	bottom: 0;
+	left:0;
+	right:0;
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+}
+
+.modal--visible {
+
+			opacity: 1;
+			visibility: visible;
+			-webkit-transform: scale(1);
+			        transform: scale(1);
+		}
+
+.modal__inner {
+		position: absolute;
+		width:100%;
+		top:50%;
+		-webkit-transform: translateY(-50%);
+		        transform: translateY(-50%);
+	}
+
+.modal__description {
+	text-align: center;
+	font-size:1.3rem;
+	font-weight: 300;
+	line-height: 1.65;
+}
+
+.modal__close {
+	position: absolute;
+	top:15px;
+	right:15px;
+	font-size: 2rem;
+	-webkit-transform: scaleX(1.2);
+	        transform: scaleX(1.2);
+	color:#2f5572;
+}
+
+.modal__close:hover{
+		color:#d59541;
+		cursor: pointer;
+}
+
+.social-icons {
+	text-align: center;
+}
+
+.social-icons__icon {
+		background-color: #d59541;
+		display: inline-block;
+		margin:0 5px 5px 5px;
+		width: 33%;
+		height: 72px;
+		position: relative;
+	}
+
+@media(min-width: 530px){
+
+.social-icons__icon {
+				width: 72px;
+				margin:0 5px
+	}
+ }
+
+.social-icons__icon img {
+			display: block;
+			position: absolute;
+			top:50%;
+			left:50%;
+			-webkit-transform: translate(-50%, -50%);
+			        transform: translate(-50%, -50%);
+		}
 
 body {
 	font-family: "Roboto", "san-serif"; 

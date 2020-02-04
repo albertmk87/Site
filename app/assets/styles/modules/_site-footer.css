@@ -9,6 +9,8 @@
 	&__text {
 		margin-bottom: 1rem;
 		display: block;
+
+		
 		@mixin atMedium {
 			margin-bottom: 0;
 			display: inline;
