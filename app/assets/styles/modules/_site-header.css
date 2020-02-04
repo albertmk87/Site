@@ -6,7 +6,12 @@
 	transition: background-color .3s ease-out;
 
 @mixin atMedium {
+		position: fixed;
 		background-color:rgba($mainblue, .3);
+
+		&--darker {
+			background-color: rgba(23, 51, 72, .86);
+		}
 	}
 		&--isExpanded {
 			background-color:rgba($mainblue, .55);
@@ -54,10 +59,16 @@
 			font-weight: 300;
 			font-size:.8rem;
 			background-color:rgba($mainblue, .6);
-
+&.current-link{
+					color: #fabb69;
+				}
 			@mixin atMedium {
 				font-size:1rem;
 				background-color: transparent;
+
+				&.current-link{
+					color: #fabb69;
+				}
 			}
 		}
 	}
@@ -78,6 +89,7 @@
 		top:0;
 		left:50%;
 		transform: translateX(-50%);
+		transition: transform .3s ease-out;
 		
 		img {
 				height: 70%;
@@ -91,6 +103,12 @@
 		@mixin atMedium {
 			left:auto;
 			transform: translateX(0);
+
+			.site-header--darker &{
+				transform: scale(.57);
+				top:0;
+
+			}
 		}
 	}
 
