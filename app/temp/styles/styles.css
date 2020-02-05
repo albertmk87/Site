@@ -612,6 +612,10 @@ a {
 		padding-top: 80px;
 	}
 
+.row--equal-heightAtLarge{
+			
+		}
+
 .row__b-margin-until-medium {
 	margin-bottom: 1rem;
 }
@@ -1082,8 +1086,8 @@ a {
 	}
 
 			.site-header--darker .site-header__logo{
-				-webkit-transform: scale(.57);
-				        transform: scale(.57);
+				-webkit-transform: scale(.55);
+				        transform: scale(.55);
 				top:0;
 
 			}
